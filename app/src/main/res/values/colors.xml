@@ -6,4 +6,5 @@
     <color name="whiteColor">#ffffff</color>
     <color name="clubCardBackground">#58a5f0</color>
     <color name="greyColor">#808080</color>
+    <color name="buttonclicked">#327cad</color>
 </resources>

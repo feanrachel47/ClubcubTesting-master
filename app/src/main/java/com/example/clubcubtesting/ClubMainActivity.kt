@@ -135,7 +135,11 @@ class ClubMainActivity : AppCompatActivity() {
                                 "Successfully join club!",
                                 Toast.LENGTH_SHORT).show()
 
+
+
                         }
+
+
                     }
 
                 }else if(p0.hasChild("joinedClub")){
@@ -170,6 +174,7 @@ class ClubMainActivity : AppCompatActivity() {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
 
+            @SuppressLint("ResourceAsColor")
             override fun onDataChange(p0: DataSnapshot) {
 
                 for(user in p0.children){
@@ -177,6 +182,7 @@ class ClubMainActivity : AppCompatActivity() {
                     if(user.value.toString() == clubID.toString()){
                         buttonJoin.text = "JOINED"
                         buttonJoin.isEnabled = false
+                        buttonJoin.setBackgroundColor(resources.getColor(R.color.buttonclicked))
                         break
                     }else if(user.value.toString() != clubID.toString()){
                         buttonJoin.text = "JOIN"
@@ -193,6 +199,7 @@ class ClubMainActivity : AppCompatActivity() {
                                     Toast.LENGTH_SHORT).show()
                                 buttonJoin.text = "JOINED"
                                 buttonJoin.isEnabled = false
+                                buttonJoin.setBackgroundColor(resources.getColor(R.color.buttonclicked))
 
                             }
                         }

@@ -2,6 +2,7 @@ package com.example.clubcubtesting
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -108,6 +109,21 @@ class EditClubDetailsActivity: AppCompatActivity(), AdapterView.OnItemSelectedLi
                                   newCategory:Int, newClubDesc:String, currPresident:String){
         val updatedClubDetails = ClubModel(clubID, newClubName,newCategory,newClubDesc,currPresident)
         val clubIdKey = clubID.toString()
+
+        val editClubDesc = findViewById<EditText>(R.id.tvEditClubDesc)
+        val editClubName = findViewById<EditText>(R.id.tvEditClubName)
+
+        if(TextUtils.isEmpty(editClubDesc.text)){
+
+            editClubDesc.error = "Required field."
+            return
+        }
+
+        if(TextUtils.isEmpty(editClubName.text)){
+
+            editClubName.error = "Required field."
+            return
+        }
 
         databaseRef.child(clubIdKey).setValue(updatedClubDetails).addOnCompleteListener{
             Toast.makeText(

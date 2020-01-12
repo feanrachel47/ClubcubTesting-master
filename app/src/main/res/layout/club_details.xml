@@ -73,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/text_label_num_members"
         android:textSize="18sp"

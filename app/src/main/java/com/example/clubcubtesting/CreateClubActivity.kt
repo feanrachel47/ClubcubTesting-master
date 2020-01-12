@@ -2,6 +2,7 @@ package com.example.clubcubtesting
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -61,6 +62,17 @@ class CreateClubActivity: AppCompatActivity(), AdapterView.OnItemSelectedListene
         val clubDesc = etClubDesc.text.toString()
         var selectedCategory:Int = spinner.selectedItemPosition
         val clubMember: Int = 1 //president consider as 1 member
+
+        if(TextUtils.isEmpty(etClubName.text)){
+
+            etClubName.error = "Required field."
+            return
+        }
+
+        if(TextUtils.isEmpty(etClubDesc.text)){
+            etClubDesc.error = "Required field."
+            return
+        }
 
         //database for clubs
         val clubdbRef = FirebaseDatabase.getInstance().getReference("clubs")
