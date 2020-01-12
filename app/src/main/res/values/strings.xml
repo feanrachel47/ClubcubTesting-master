@@ -39,6 +39,7 @@
     <string name="button_text_cancel" >Cancel</string>
     <string name="label_title_edit_club">Edit Club Details</string>
     <string name="btn_text_save_changes">Save Changes</string>
+    <string name="forgot_pw_email_string">Enter your e-mail</string>
 
     <string-array name="club_category_array">
         <item>Art</item>
