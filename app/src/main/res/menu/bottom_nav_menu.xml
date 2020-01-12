@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_white_24dp"/>
+
+    <item
+        android:id="@+id/clubs"
+        android:title="Clubs"
+        android:icon="@drawable/ic_clubs_white_24dp"/>
+
+    <item
+        android:id="@+id/events"
+        android:title="Events"
+        android:icon="@drawable/ic_events_white_24dp"/>
+
+    <item
+        android:id="@+id/profile"
+        android:title="You"
+        android:icon="@drawable/ic_account_box_white_24dp"/>
+
+</menu>

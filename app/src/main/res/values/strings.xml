@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Clubcub</string>
+    <string name="nickname">Nickname</string>
+    <string name="clubcub">CLUBCUB</string>
+    <string name="login">LOG IN</string>
+    <string name="signup">SIGN UP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile_description">Profile Description</string>
+    <string name="updateProfile">Update Profile</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="dont_have_account">Don\'t have account ? Sign up here</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="register">Register</string>
+    <string name="ard_have_account">Already have an account?</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="email_address">Email Address</string>
+    <string name="change_pw">Change Password</string>
+    <string name="logout">Logout</string>
+
+    <!--Rachel-->
+    <string name="club_name">Fitness Club</string>
+    <string name="testing_data">Testing</string>
+    <string name="label_create_club">CREATE CLUB</string>
+    <string name="inclub_joinButton">JOIN</string>
+    <string name="label_text_president" >President:</string>
+    <string name="label_text_club_description">Description:</string>
+    <string name="text_label_num_members">Members:</string>
+    <string name="text_label_create_club">Create Your Own Club!</string>
+    <string name="creatclub_name_hint" >Enter your club name here</string>
+    <string name="label_club_name">Club Name</string>
+    <string name="label_club_category">Club Category</string>
+    <string name="label_club_clubDesc">Club Description</string>
+    <string name="button_create_club">Create Club</string>
+    <string name="button_text_cancel" >Cancel</string>
+    <string name="label_title_edit_club">Edit Club Details</string>
+    <string name="btn_text_save_changes">Save Changes</string>
+
+    <string-array name="club_category_array">
+        <item>Art</item>
+        <item>Education</item>
+        <item>Environmental</item>
+        <item>Entertainment</item>
+        <item>Sports</item>
+        <item>Others</item>
+    </string-array>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/clubCardBackground"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/clubIcon"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/ic_sports_white_24dp" />
+
+            <TextView
+                android:id="@+id/textViewClubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/clubIcon"
+                android:layout_toRightOf="@+id/clubIcon"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/club_name"
+                android:textColor="@color/whiteColor"
+                android:textSize="30dp"
+
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

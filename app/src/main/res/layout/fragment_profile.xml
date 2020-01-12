@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ProfileFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/profilePicImage"
+        android:layout_width="0dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/profile_picture"
+        android:src="@drawable/panpan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nickname_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/nickname"
+        android:textColor="#004c8c"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profilePicImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/profilePicImage"
+        app:layout_constraintTop_toBottomOf="@+id/profilePicImage" />
+
+    <TextView
+        android:id="@+id/home_nickname_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_textView"
+        app:layout_constraintStart_toStartOf="@+id/nickname_textView"
+        app:layout_constraintTop_toBottomOf="@+id/nickname_textView" />
+
+    <TextView
+        android:id="@+id/email_address_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/email_address"
+        android:textColor="#004c8c"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profilePicImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profilePicImage"
+        app:layout_constraintTop_toBottomOf="@+id/home_nickname_textView" />
+
+    <TextView
+        android:id="@+id/emailaddress_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nickname_textView"
+        app:layout_constraintTop_toBottomOf="@+id/email_address_textView" />
+
+    <TextView
+        android:id="@+id/profile_desc_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/profile_description"
+        android:textColor="#004c8c"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profilePicImage"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profilePicImage"
+        app:layout_constraintTop_toBottomOf="@+id/emailaddress_textView" />
+
+    <TextView
+        android:id="@+id/profile_description_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/nickname_textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nickname_textView"
+        app:layout_constraintTop_toBottomOf="@+id/profile_desc_textView" />
+
+    <Button
+        android:id="@+id/editProfile_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#4c89bd"
+        android:text="@string/edit_profile"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/profile_description_textView"
+        app:layout_constraintStart_toStartOf="@+id/profile_description_textView"
+        app:layout_constraintTop_toBottomOf="@+id/profile_description_textView" />
+
+    <Button
+        android:id="@+id/changePassword_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#4c89bd"
+        android:text="@string/change_pw"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/profile_description_textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_description_textView"
+        app:layout_constraintTop_toBottomOf="@+id/editProfile_button" />
+
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#4c89bd"
+        android:text="@string/logout"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/profile_description_textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_description_textView"
+        app:layout_constraintTop_toBottomOf="@+id/changePassword_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
